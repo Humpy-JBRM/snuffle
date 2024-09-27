@@ -29,7 +29,7 @@ func NewEBPFEvent(ebpfEvent *EBPFEvent) *SnuffleEvent {
 }
 
 // TODO: replace with actual pcap data struct
-type PcapEvent any
+type PcapEvent struct{}
 
 // TODO: replace with actual EBPF struct
-type EBPFEvent any
+type EBPFEvent struct{}

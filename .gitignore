@@ -1,0 +1,105 @@
+# Go
+
+## Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+## Test binary, built with `go test -c`
+*.test
+
+## Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+## Generated files
+**/*.o
+
+## Dependency directories (remove the comment below to include it)
+# vendor/
+
+## Go workspace file
+go.work
+
+# VSCode
+**/.vscode/*
+
+#$ Local History for Visual Studio Code
+.history/
+
+# Glonag debug files
+**/__debug_bin*
+
+# Common credential files
+**/profiles.json
+**/credentials.json
+**/client_secrets.json
+**/client_secret.json
+*creds*
+*.dat
+*password*
+*.httr-oauth*
+
+# Private Node Modules
+node_modules/
+creds.js
+
+# Mac/OSX
+.DS_Store
+
+#Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+ 
+# C extensions
+*.so
+ 
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+test-output.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Scrapy stuff:
+.scrapy
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

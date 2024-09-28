@@ -1,4 +1,4 @@
-package ebpf
+package counter
 
 import (
 	"log"
@@ -11,7 +11,9 @@ import (
 	"github.com/cilium/ebpf/rlimit"
 )
 
-func RunEbpf() {
+//go:generate go run github.com/cilium/ebpf/cmd/bpf2go counter counter.c
+
+func RunCounter() {
 	// Remove resource limits for kernels <5.11.
 	if err := rlimit.RemoveMemlock(); err != nil {
 		log.Fatal("Removing memlock:", err)

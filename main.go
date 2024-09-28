@@ -1,9 +1,9 @@
 package main
 
 import (
-	"snuffle/collector/ebpf"
+	"snuffle/collector/ebpf/counter"
 )
 
 func main() {
-	ebpf.RunEbpf()
+	counter.RunEbpf()
 }

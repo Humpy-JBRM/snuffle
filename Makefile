@@ -4,10 +4,10 @@ build:	generate
 	go build -o snuffle .
 
 generate:
-	( cd collector/ebpf && go generate )
+	( cd src/collector/ebpf && make generate )
 
 test:
 	go test -v ./...
 
 clean:
-	( cd collector/ebpf && make clean )
+	( cd src/collector/ebpf && make clean )

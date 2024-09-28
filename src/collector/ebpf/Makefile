@@ -1,20 +1,12 @@
+all:	build
 
-all:	generate build test
+build:	generate
 
 generate:
-	go generate
-
-build:
-	go build
+	( cd counter && make generate )
 
 test:
-	go test -v ./...
-
-run:
-	sudo ./ebpf-test
+	( cd counter && make test )
 
 clean:
-	rm -f *.o
-	rm -f counter_bpfeb.go
-	rm -f ebpf-test
-
+	( cd counter && make clean )
